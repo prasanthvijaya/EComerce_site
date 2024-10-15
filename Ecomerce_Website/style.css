@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.first{
+    width:100%;
+    height:100vh;
+    padding: 0 10%;
+    background-color: antiquewhite;
+    background: radial-gradient(circle, white 0%, #ffd1a9 70%, #785b50 100%);
+}
+.second{
+    width:100%;
+    height:700px;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.third{
+    width: 100%;
+    height: 700px;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.four{
+    width: 100%;
+    height:1000px;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.five{
+    width:100%;
+    height:60vh;
+    padding: 0 10%;
+    background-color: antiquewhite;
+    background: radial-gradient(circle, white 0%, #ffd1a9 70%, #785b50 100%);
+    display: flex;
+    flex-direction: row;
+}
+.six{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    gap: 70px;
+  
+}
+.seven{
+    width: 100%;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    justify-content: center;
+}
+.seven ul{
+    display: flex;
+}
+.seven ul li{
+    list-style: none;
+    margin: 0 30px;
+}
+.seven ul li img{
+    filter: grayscale(100%);
+    cursor: pointer;
+    width: 170px;
+    height: 100px;
+    object-fit: contain;
+    transition: filter 0.5s ease;
+}
+.seven ul li img:hover {
+    filter: grayscale(0%); /* Bring the image back to full color on hover */
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+.logo img{
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: gray;
+}
+nav ul li a:hover{
+    color: rgb(190, 176, 176);
+}
+.cart-icon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    object-fit: contain;
+}
+.first-first{
+    height: 90%;
+    width:100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.frist_left{
+    width: 50%;
+    height: 100%;
+}
+.frist_left img{
+    width: 500px;
+    height: 100%;
+    object-fit: contain;
+}
+.first_right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+    gap: 20px;
+}
+.first_right h1{
+    font-size: 50px;
+}
+.first_right p{
+    color: gray;
+    line-height: 1.5;
+}
+.Explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff7f50; /* Coral color */
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.Explore-btn:after {
+    content: ' →'; /* Arrow mark */
+    display: inline-block;
+    margin-left: 10px; /* Spacing between text and arrow */
+    transition: transform 0.3s ease; /* Smooth arrow animation */
+}
+
+.Explore-btn:hover:after {
+    transform: translateX(5px); /* Moves arrow 5px to the right on hover */
+}
+.feature_product{
+    display: flex;
+    width: 100%;
+    height: 200%;
+    justify-content: center;
+    align-items: center;
+    gap:90px;
+    background-color: red;
+}
+.latest_product{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.latest_product .lp{
+    width: 21%;
+    height: 100%;   
+}
+.latest_product .lp img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.title{ 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+.title span{
+    border-bottom: 5px solid red;
+    border-radius: 5px;
+}
+.feature_product .fp{
+    width: 25%;
+    height: 100%;
+}
+.feature_product .fp img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   
+}
+.multi_product{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.multi_product .mp{
+    width: 21%;
+    height: 50%;   
+    display: flex;
+    flex-direction: column;
+}
+.multi_product .mp img{
+    cursor: pointer;
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+}
+.five_first{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.five_first img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+.five_second{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    gap: 20px;
+}
+.five_second p,span{
+    color: gray;
+}
+.five_second h1{
+    font-size: 50px;
+}
+.buy_now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff7f50; /* Coral color */
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 150px;
+}
+
+.buy_now-btn:after {
+    content: ' →'; /* Arrow mark */
+    display: inline-block;
+    margin-left: 10px; /* Spacing between text and arrow */
+    transition: transform 0.3s ease; /* Smooth arrow animation */
+}
+
+.buy_now-btn:hover:after {
+    transform: translateX(5px); /* Moves arrow 5px to the right on hover */
+}
+.profile{
+    width: 20%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Horizontal offset, vertical offset, blur radius, color */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+.rating ul{
+    display: flex;
+}
+.rating ul li{
+    color: rgb(178, 118, 5);
+    list-style: none;
+    margin: 0 5px;
+}
+.pp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.pp img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pp span{
+    color: black;
+}
+.profile p{
+    text-align: center;
+    font-size: 14px;
+    color: gray ;
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.section1{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 2px solid white;
+}
+.section2{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding: 20px 0;
+}
+.first-sec{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.second-sec{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.download{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+} 
+.download h1{
+    color: white;
+}
+.download p{
+    color: gray;
+}
+.downloadoption{
+    display: flex;
+    flex-direction: row;
+}
+.downloadoption img{
+    width: 150px;
+    object-fit: contain;
+}
+.log2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.log2 img{
+    width: 200px;
+}
+.ptag{
+    color: gray;
+    text-align: center;
+    font-size: 12px;
+}
+.subq{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subq span{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.subq ul li{
+    list-style: none;
+    margin-top: 3px;
+}
+.subq ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.details ul{
+    display: flex;
+    gap: 5px;
+}
+.details ul li{
+    list-style-type: none;
+    color: orange;
+}
+
+.row{
+    width: 100%;
+    height: 50%;
+    display: flex;   
+    justify-content: space-around;
+}
+.col{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.col img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.main{
+    width:100%;
+    padding: 0 10%;
+}
+.first_AllProduct{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.tool{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tool section{
+    height: 20%;
+}
+.pagination div{
+    border: 2px solid rgb(197, 113, 24); /* Add a square border */
+    padding: 10px 15px; /* Padding for square effect */
+    text-align: center;
+    width: 40px; /* Set a fixed width for uniformity */
+    height: 40px; /* Set a fixed height for uniformity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer; /* Make the numbers and arrows clickable */
+}
+.arrow:after {
+    content: ' →'; /* Arrow mark */
+    display: inline-block;
+    margin-left: 10px; /* Spacing between text and arrow */
+    transition: transform 0.3s ease; /* Smooth arrow animation */
+}
+
+.arrow:hover:after {
+    transform: translateX(5px); /* Moves arrow 5px to the right on hover */
+}
+.pagination{
+    padding: 50px 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 100px;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.productDetails{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    gap: 20px;
+}
+.pic{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.pic img{
+    width: 71%;
+}
+.ppleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-right: 10px;
+    gap: 5px;
+}
+.ppright{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.allImages{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+}
+.smallpic{
+    width: 100px;
+    height: 100px;
+}
+.smallpic img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.countDiv{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+#size{
+    width: 150px;
+    height: 25px;
+}
+.numberCount{
+    width: 40px;
+    height: 40px;
+    border: 2px solid orange;
+    text-align: center;
+}
+.addCart-btn{
+    width: 150px;
+    color: white;
+    height: 35px;
+    border-radius: 25px;
+    background-color: orange;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pprice{
+    font-size: 15px;
+    font-weight: 550;
+}
+.ppright h1{
+    font-size: 45px;
+}
+.pd{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.dec{
+    color: gray;
+    font-size: 15px;
+}
+.relatedProduct_cartpage{
+   
+    display: flex;
+}
+.coltwo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    align-items: end;
+}
+.coltwo img{
+    width: 70%;
+    height: 60%;
+    object-fit: contain;
+}
+.coltwo div ul{
+    display: flex;
+    gap: 5px;
+}
+.coltwo div ul li{
+    list-style: none;
+    color: orange;
+}
+.divv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding-bottom: 50px;
+}
+.divv a{
+    text-decoration: none;
+    color: gray;
+}
+.thirdDIV{
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+.table{
+    background-color: green;
+}
+.tableIMG{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.tcontent{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.tcontent div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.tcontent div a{
+    text-decoration: none;
+    color: blue;
+}
